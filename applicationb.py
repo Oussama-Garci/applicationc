@@ -4,7 +4,7 @@ from kivy.app import App
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
 import arabic_reshaper
-from bidi.algorithm import get_display
+
 
 
 class Mouna(FloatLayout):
@@ -29,11 +29,11 @@ class Mouna(FloatLayout):
         x = x.replace(')', '')
         N = int(x)
         i = random.randrange(0, N)
-        y = arabic_reshaper.reshape(A[0,i])
-        t = get_display(y)
+        y = A[0,i]
+        
         z = A[1,i]
 
-        self.vd = t
+        self.vd = y
         self.vc = z
 
 
