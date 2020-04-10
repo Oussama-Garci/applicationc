@@ -3,7 +3,7 @@ import numpy as np
 from kivy.app import App
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
-import arabic_reshaper
+
 
 
 
